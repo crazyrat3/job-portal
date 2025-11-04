@@ -27,6 +27,7 @@ try{
                 resume:''
             }
           await User.create(userData)
+          console.log(User)
           res.json({})
           break;
         }
