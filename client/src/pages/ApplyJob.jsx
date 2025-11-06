@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
 
 import Loading from '../components/Loading'
-import Navbar from '../components/NavBar'
+import Navbar from '../components/Navbar'
 import kconvert from 'k-convert'
 import moment from 'moment'
 import JobCard from '../components/JobCard'
