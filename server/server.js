@@ -5,12 +5,17 @@ import 'dotenv/config'
 import connectDB from './config/db.js'
 import * as Sentry from "@sentry/node"
 import { ClerkWebHooks} from './controllers/webhooks.js'
-
+import companyRoutes from './routes/companyRoutes.js'
+import connectCloudinary from './config/cloudinary.js'
+import jobRoutes from './routes/jobRoutes.js'
+import userRoutes from './routes/UserRoutes.js'
+import {clerkMiddleware} from '@clerk/express'
 //Intialize express
 const app = express()
 
 //connect to db
 await connectDB()
+await connectCloudinary()
 
 
 
@@ -23,6 +28,7 @@ app.use(function onError(err, req, res, next) {
   res.statusCode = 500;
   res.end(res.sentry + "\n");
 });
+app.use(clerkMiddleware())
 
 //routes
 app.get('/',(req,res)=>res.send("API Working"))
@@ -30,6 +36,9 @@ app.get("/debug-sentry", function mainHandler(req, res) {
   throw new Error("My first Sentry error!");
 });
 app.post('/webhooks',ClerkWebHooks)
+app.use('/api/company',companyRoutes)
+app.use('/api/jobs',jobRoutes)
+app.use('/api/user',userRoutes)
 
 //PORT
 
