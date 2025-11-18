@@ -266,7 +266,8 @@ login
 
 home page
 
-<img width="1452" height="778" alt="Jobs" src="https://github.com/user-attachments/assets/795402ce-a8f9-42f1-89eb-144c6d3d5773" />
+<img width="1508" height="754" alt="Home Page" src="https://github.com/user-attachments/assets/926ee5a9-9a6b-464d-b59a-649fefd49014" />
+
 
 <img width="1494" height="811" alt="Home Page" src="https://github.com/user-attachments/assets/6ac4b3d5-b490-403b-95d4-bf03fedb041e" />
 
