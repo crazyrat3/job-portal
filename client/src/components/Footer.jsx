@@ -9,12 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="p-2 bg-linear-to-br from-blue-500 to-blue-700 rounded-lg">
-                <Briefcase className="size-5 text-white" />
-              </div>
-              <span className="text-white">JobPortal</span>
-            </div>
+           
             <p className="text-sm text-gray-400 leading-relaxed">
               Find your dream job or hire the perfect candidate. Your career journey starts here.
             </p>
