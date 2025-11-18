@@ -14,7 +14,7 @@ const Navbar =()=>{
     return(
         <div className='shadow py-4'>
             <div className='container px-4 2xl:px-20 mx-auto flex justify-between items-center'>
-                <img onClick={()=>navigate('/')} className='cursor-pointer' src={assets.logo} alt="" />
+                <img onClick={()=>navigate('/')} className='cursor-pointer ' src={assets.logo} alt="" />
                 {/* this is where we do conditional if user is login and if user is not login*/ }
                 {
                    user
