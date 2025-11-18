@@ -53,13 +53,13 @@ const Footer = () => {
                 <div className="p-1.5 bg-gray-700 rounded">
                   <Phone className="size-3.5" />
                 </div>
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9999999999</span>
               </li>
               <li className="flex items-center gap-2 hover:text-blue-400 transition-colors">
                 <div className="p-1.5 bg-gray-700 rounded">
                   <MapPin className="size-3.5" />
                 </div>
-                <span>San Francisco, CA</span>
+                <span>Mumbai, India</span>
               </li>
             </ul>
           </div>
